@@ -1,0 +1,450 @@
+@font-face {
+    font-family: Tahoma1;
+    src: url(../FONTS/103-Tahoma.ttf);
+}
+@font-face {
+    font-family: Arial1;
+    src: url(../FONTS/Arial_Rounded_MT.ttf);
+}
+@font-face {
+    font-family: Comic1;
+    src: url(../FONTS/ComicSansMS3.ttf);
+}
+@font-face {
+    font-family: unispace1;
+    src: url(../FONTS/unispacerg.ttf);
+}
+.clear{
+    clear: both;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: #00BAFF;
+    padding: 7px;
+}
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 61%;
+    margin-left: 60px;
+}
+header div a{
+    text-decoration: none;
+    color: black;
+    font-family: "Comic1", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+header div .live-header{
+    color: white;
+}
+header img{
+    width: 70px;
+    height: 70px;
+}
+.personal-info article{
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.personal-info h1, .courses-info h1, .exper-info h1, .view-attach h1{
+    font-family: "unispace1", sans-serif;
+    padding: 20px 67px;
+    font-size: 40px;
+}
+.exper-info h1{
+    padding-left: 85px;
+}
+.view-attach h1{
+    padding: 20px 0;}
+.personal-info .info-name{
+    font-family: "Tahoma1", sans-serif;
+    display: inline-block;
+    margin-left: 67px;
+}
+.personal-info .info-name div{
+    margin-bottom: 40px;
+}
+.personal-info .info-value{
+    font-family: "Tahoma1", sans-serif;
+    display: inline-block;
+    margin-left: 55px;
+}
+.personal-info .info-value div{
+    margin-bottom: 40px;
+}
+.personal-info .info-pic{
+    display: inline-block;
+    position: absolute;
+    right: 150px;
+    border: 1px solid gray;
+    width: fit-content;
+    height: fit-content;
+}
+.personal-info .info-pic img{
+    width: 430px;
+}
+.courses-info{
+    font-family: "Arial1", serif;
+}
+.courses-info table{
+    font-family: "Tahoma1", sans-serif;
+    font-size: 14px;
+    width: calc(100% - 134px);
+    margin-left: 67px;
+    border: 1px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    text-align: center;
+    border-radius: 13px;
+    border-spacing: 0;
+    margin-bottom: 70px;
+}
+.courses-info table td:nth-child(1){
+    width: 3%;
+}
+.courses-info table td:nth-child(2){
+    width: 17%;
+}
+.courses-info table td:nth-child(3){
+    width: 10%;
+}
+.courses-info table td:nth-child(4){
+    width: 8%;
+}
+.courses-info table td:nth-child(5){
+    width: 8%;
+}
+.courses-info table td:nth-child(6){
+    width: 18%;
+}
+.courses-info table td:nth-child(7){
+    width: 8%
+}
+.courses-info table td:nth-child(8){
+    width: 22%;
+}
+.courses-info table tr:nth-child(odd){
+    background-color: #dedede;
+}
+.courses-info table tr:last-child td:first-child {
+    border-bottom-left-radius: 12px;
+}
+.courses-info table tr:last-child td:last-child {
+    border-bottom-right-radius: 12px;
+}
+.courses-info table tr:first-child th:first-child {
+    border-top-left-radius: 12px;
+}
+.courses-info table tr:first-child th:last-child {
+    border-top-right-radius: 12px;
+}
+.courses-info table td:nth-child(2), td:nth-child(8){
+    text-align: left;
+    padding-left: 10px;
+}
+.courses-info table .date1{
+    border-bottom: 2px solid black;
+}
+.courses-info table td{
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-top: 1px solid #000;
+    height: 100px;
+}
+.courses-info table td .notes-td-div{
+    height: 100px;
+    overflow: auto;
+    padding: 10px 4px;
+}
+
+.courses-info table td button{
+    width: 80%;
+    border-radius: 8px;
+    border: 0;
+    height: 30px;
+    background-color: rgba(255, 28, 38, 0.88);
+}
+.courses-info table td button a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+.courses-info table th{
+    background-color: #606060;
+    height: 25px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+.exper-info article{
+    margin: 20px 85px 58px;
+}
+.exper-info article h2{
+    width: 100%;
+    font-family: "Tahoma1", sans-serif;
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+.exper-info article h2 button{
+    width: 66px;
+    border-radius: 8px;
+    border: 0;
+    height: 30px;
+    background-color: rgba(255, 28, 38, 0.88);
+    position: absolute;
+    right: 85px;
+}
+.exper-info article h2 button a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+.exper-info article h2 sub{
+    margin-left: 15px;
+    font-size: 12px;
+}
+.exper-info article .article-date{
+    font-family: "Arial1", sans-serif;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+.exper-info article .article-body{
+    font-family: "Arial1" ,sans-serif;
+    font-size: 14px;
+}
+.add-course {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 120px;
+    margin-bottom: 55px;
+}
+.add-course form{
+    width: 48%;
+    font-family: "Tahoma1", sans-serif;
+}
+.add-course form .form-style{
+    display: flex;
+    width: fit-content;
+}
+.add-course .form-pic{
+    width: 48%;
+    height: 100%;
+}
+.add-course .form-pic img{
+    width: 100%;
+    height: 690px;
+}
+.add-course form .form-style .input-label label{
+    display: block;
+    width: 150px;
+    margin-bottom: 51px;
+    margin-top: 6px;
+}
+.add-course form .form-style .course-input{
+    display: inline-block;
+    margin-left: 28px;
+    width: 470px;
+}
+.add-course form .form-style .course-input .for-span{
+    display: flex;
+}
+.add-course form .form-style .course-input .for-span .file-url{
+    width: 48%;
+}
+.add-course form .form-style .course-input .for-span span{
+    margin-left: 20px;
+    font-size: 13px;
+    margin-top: 5px;
+    color: red;
+}
+.add-course form .form-style .course-input input{
+    width: 48%;
+    height: 30px;
+    display: block;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    border: 1px solid #494949;
+}
+.add-course form .form-style .course-input .for-span div input[type=url]{
+    width: 100%;
+}
+.add-course form .form-style .course-input input[type=file]{
+    width: 100%;
+    height: 30px;
+    display: block;
+    margin-bottom: 40px;
+    border-radius: initial;
+    border: initial;
+}
+.add-course form .form-style .course-input input[type=file]::file-selector-button{
+    width: 50%;
+    height: 30px;
+    display: initial;
+    border-radius: 8px;
+    border: 1px solid #494949;
+    margin-right: 25px;
+}
+.add-course form .form-style .course-input textarea{
+    width: 48%;
+    height: 120px;
+    display: block;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: 1px solid #494949;
+}
+.add-course form .form-style .course-input .radio{
+    margin-bottom: 40px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    width: 48%;
+}
+.add-course form .form-style .course-input .radio div{
+    height: 30px;
+    display: flex;
+    justify-items: center;
+}
+.add-course form .form-style .course-input .radio div input{
+    display: initial;
+    margin: 0;
+    width: initial;
+    height: initial;
+}
+.add-course form .form-style .course-input .radio div label{
+    padding-top: 6px;
+}
+.add-course form .course-buttons{
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    height: 30px;
+    width: 97%;
+}
+.add-course form .course-buttons input[type=submit], input[type=reset]{
+    width: 210px;
+    color: white;
+    border-radius: 8px;
+    border: 0;
+}
+.add-course form .course-buttons input[type=submit]{
+    background-color: #198754;
+    margin-left: 25px;
+}
+.add-course form .course-buttons input[type=reset]{
+    background-color: #dc3545;
+}
+.add-exper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 120px;
+    margin-bottom: 55px;
+}
+.add-exper form{
+    width: 65%;
+    font-family: "Tahoma1", sans-serif;
+}
+.add-exper form .form-style{
+    display: flex;
+    width: fit-content;
+}
+.add-exper .form-pic{
+    width: 35%
+}
+.add-exper .form-pic img{
+    width: 100%;
+    height: 100%;
+}
+.add-exper form .form-style .input-label label{
+    display: block;
+    width: 150px;
+    margin-bottom: 51px;
+    margin-top: 6px;
+}
+.add-exper form .form-style .exper-input{
+    display: inline-block;
+    margin-left: 28px;
+    width: 595px;
+}
+.add-exper form .form-style .exper-input .for-span{
+    display: flex;
+}
+.add-exper form .form-style .exper-input .for-span span{
+    margin-left: 20px;
+    font-size: 13px;
+    margin-top: 5px;
+    color: red;
+}
+.add-exper form .form-style .exper-input input{
+    width: 38%;
+    height: 30px;
+    display: block;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    border: 1px solid #494949;
+}
+.add-exper form .form-style .exper-input textarea{
+    height: 120px;
+    display: block;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: 1px solid #494949;
+    width: 72%;
+}
+.add-exper form .exper-buttons{
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    height: 30px;
+    margin-top: 30px;
+    width: 65%;
+}
+.add-exper form .exper-buttons input[type=submit], input[type=reset]{
+    width: 210px;
+    color: white;
+    border-radius: 8px;
+    border: 0;
+}
+.add-exper form .exper-buttons input[type=submit]{
+    background-color: #198754;
+    margin-left: 25px;
+}
+.add-exper form .exper-buttons input[type=reset]{
+    background-color: #dc3545;
+}
+.view-attach{
+    margin: 30px 67px;
+}
+.view-attach .attach-info{
+    font-family: "Tahoma1", sans-serif;
+}
+.view-attach .attach-info div{
+    margin-bottom: 20px;
+}
+.view-attach .attach-photo{
+    font-family: "Tahoma1", sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 35px 25px 10px;
+}
+.view-attach .attach-photo div img{
+    box-shadow: 8px 8px 4px gray;
+    width: 100%;
+}
+.view-attach .attach-photo div p{
+    margin-top: 7px;
+}
